@@ -1,0 +1,134 @@
+body {
+    overflow-x: hidden;
+    background-color: #7c7052;
+    color: #312c20;
+}
+.sidebar {
+    min-height: 100vh;
+    background-color: #312c20;
+    padding-top: 20px;
+}
+.sidebar a {
+    color: #7c7052;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+.sidebar a:hover {
+    background-color: #494d4b;
+    color: #e2cb92;
+}
+
+.custom-input, .custom-select, .custom-textarea {
+    background-color: #e2cb92;
+    border: 1px solid #7c7052; 
+    color: #312c20;
+  }
+  .custom-input:focus, .custom-select:focus, .custom-textarea:focus {
+    border-color: #7c7052; 
+    background-color: #e2cb92;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .custom-btn {
+    background-color: #312c20; 
+    color: #e2cb92;
+    border: none;
+  }
+  .custom-btn:hover {
+    background-color: #49412f;
+  }
+  .logout{
+    color: rgb(201, 76, 76) !important;
+  }
+
+  .bg_primary {
+    background-color: #7c7052;
+  }
+
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.bg_secondary {
+  background-color: #312c20;
+}
+
+.ticket-card {
+  overflow: hidden;
+  background-color: #e2cb92;
+  border: 1px solid #7c7052;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.ticket-card:hover {
+  transform: scale(1.02);
+}
+
+.ticket-header {
+  background-color: #7c7052;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.ticket-body {
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+.ticket-more {
+  padding: 15px;
+  padding-top: 0;
+}
+
+.ticket-footer {
+  background-color: #c9b582;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: right;
+}
+
+.btn-custom {
+  background-color: #494d4b;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #312c20;
+  color: #fff;
+
+}
+
+.title{
+  color: #312c20;
+}
+
+.link_danger {
+  color: #c9b582 !important;
+}
+
+.container_image{
+  width: 70%;
+}
+
+.hidden {
+  display: none;
+}
