@@ -10,7 +10,7 @@ Este projeto é um sistema simples de gestão de chamados. Abaixo estão os pass
 ### a) Criar o banco e as tabelas
 
 1. Localize o arquivo `install.sql` (que cria o banco de dados e tabelas).
-2. Importe o arquivo no seu MySQL usando **phpMyAdmin**, **DBeaver**, '**MySQL** **Workbench**' ou pela linha de comando:
+2. Importe o arquivo no seu MySQL usando **phpMyAdmin**, **DBeaver**, **MySQL** **Workbench** ou pela linha de comando:
 
 ```bash
 mysql -u SEU_USUARIO -p < install.sql
