@@ -62,16 +62,18 @@ $userRole = $_SESSION['user']['role'];
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 
                 <div class="container my-5">
-                    <h1 style="color: #e2cb92" class="mb-4">
-                        <?php
-                        if ($_SESSION['user']['role'] == 'client') {
-                            echo "Meus Chamados";
-                        } else if ($_SESSION['user']['role'] == 'technician') {
-                            echo "Lista de Chamados";
-                        }
-                        ?>
-                    </h1>
+                    <div class="d-flex align-items-center mb-4 gap-5">
+                        <h1 style="color: #e2cb92" class="">
+                            <?php
+                            if ($_SESSION['user']['role'] == 'client') {
+                                echo "Meus Chamados";
+                            } else if ($_SESSION['user']['role'] == 'technician') {
+                                echo "Lista de Chamados";
+                            }
+                            ?>
+                        </h1>
 
+                    </div>
                     <div class="row g-4">
                         <?php
                         require_once '../controllers/TicketController.php';
@@ -147,7 +149,7 @@ $userRole = $_SESSION['user']['role'];
                                             class="ticket-more">
                                             <p><strong>Data:</strong>
                                                 <?php
-                                                    echo htmlspecialchars(date('d/m/Y', strtotime($ticket['date'])));
+                                                echo htmlspecialchars(date('d/m/Y', strtotime($ticket['date'])));
                                                 ?>
                                                 <strong>Hora:</strong> <?php echo htmlspecialchars($ticket['time']); ?>
                                             </p>

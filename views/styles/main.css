@@ -132,3 +132,9 @@ body {
 .hidden {
   display: none;
 }
+
+.hover-secondary-input:hover{
+  background-color: #b4a378 !important;
+  color: #312c20;
+  border: 1px solid #7c7052;
+}
